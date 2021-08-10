@@ -1,19 +1,14 @@
-
 public class Main {
     public static void main(String[] args) {
-
         var miGestion = new Gestion();
         miGestion.procesarComando();
     }
 }
 
-/*
-done: Inicializacion(): Inicializa las variables relacionada al array ó list tipo Persona.
-
-done: AgregarPersona(Persona persona): recibe como parámetro un objeto tipo persona y lo adiciona al array ó list tipo persona.
-
-todo: ListarPersona(): debe recorrer el array ó list tipo Persona y mostrar los registros con el toString().
-
-done: ProcesarComando(): debe poder realizar la lectura desde consola con la siguiente estructura:
- -> opción&tipoPersona&nombre&identificación&teléfono&dirección&elemento
- */
+/* input examples:
+    1&Proveedor&Carlos&123456&55555&avemida siempre viva 45&llantas
+    1&Socio&Manuel&789456&7777777&calle 10N 4-25&23
+    1&Socio&Manuel&2334455&6666&av caracas n12-20&56
+    2
+    3
+*/

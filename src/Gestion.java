@@ -6,56 +6,54 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Gestion {
+    // attributes
+    private static final Scanner sc = new Scanner(System.in);
     private final ArrayList<Persona> personas;
 
-    // Constructor - Inicializa las variables relacionada al array ó list tipo entidades.Persona
+    // constructor
     public Gestion() {
         personas = new ArrayList<>();
     }
 
-    // recibe como parámetro un objeto tipo persona y lo adiciona al array ó list tipo persona.
+    // añade persona a la lista de personas
     public void agregarPersona(Persona persona) {
         personas.add(persona);
     }
 
-    // debe recorrer el array ó list tipo entidades.Persona y mostrar los registros con el toString()
-    public void listarPersona() {
+    // muestra los atributos de cada persona dentro de la lista
+    public void listarPersonas() {
         for (Persona persona : personas) {
             System.out.println(persona.toString());
         }
     }
 
-    // debe poder realizar la lectura desde consola con la siguiente estructura:
+    // lee por consola los datos que se van a introducir y decide qué métodos ejecutar
     public void procesarComando() {
-        Scanner sc = new Scanner(System.in);
-
         while (true) {
             String input = sc.nextLine().trim();
 
-            if (input.charAt(0) == '3') break; // Salir
+            if (input.charAt(0) == '3') break;
 
-            String[] parts = input.split("&");
-            String tipoPersona = parts[1];
-            String nombre = parts[2];
-            String idPersona = parts[3];
-            String phonePersona = parts[4];
-            String direccion = parts[5];
-            String elemento = parts[6];
+            if (input.charAt(0) == '2') listarPersonas();
 
-            if (parts[0].equals("1")) {
-                Persona persona;
-                if (tipoPersona.equals("Proveedor")) {
-                    persona = new Proveedor(nombre, idPersona, phonePersona, direccion, elemento);
-                } else {
-                    persona = new Socio(nombre, idPersona, phonePersona, direccion, elemento);
+            else if (input.charAt(0) == '1') {
+                String[] parts = input.split("&");
+
+                String personType = parts[1];
+                String name = parts[2];
+                String id = parts[3];
+                int tel = Integer.parseInt(parts[4]);
+                String address = parts[5];
+                String different = parts[6];
+
+                if (parts[0].equals("1")) {
+                    if (personType.equalsIgnoreCase("proveedor")) {
+                        agregarPersona(new Proveedor(name, id, tel, address, different));
+                    } else if (personType.equalsIgnoreCase("socio")) {
+                        agregarPersona(new Socio(name, id, tel, address, different));
+                    }
                 }
-                agregarPersona(persona);
-
-
-            } else if (parts[0].equals("2")) {
-                listarPersona();
             }
         }
     }
 }
-

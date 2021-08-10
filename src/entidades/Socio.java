@@ -1,11 +1,24 @@
 package entidades;
 
 public class Socio extends Persona {
+    // attributes
     private final String antiquity;
 
-    public Socio(String name, String userID, String phoneNumber, String location, String antiquity) {
-        super(name, userID, phoneNumber, location);
+    // constructor
+    public Socio(String name, String id, int phoneNumber, String address, String antiquity) {
+        super(name, id, phoneNumber, address);
         this.antiquity = antiquity;
+    }
+
+    @Override
+    public String toString() {
+        return "Socio { " +
+                "name='" + getName() + '\'' +
+                ", id=" + getId() +
+                ", phoneNumber=" + getPhoneNumber() +
+                ", address='" + getAddress() + '\'' +
+                ", antiquity='" + antiquity + '\'' +
+                " } ";
     }
 }
 

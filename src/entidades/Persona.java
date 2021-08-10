@@ -1,29 +1,23 @@
 package entidades;
 
 public class Persona {
-    // Attributes
+    // attributes
     private final String name;
-    private final String userID;
-    private final String phoneNumber;
-    private final String location;
+    private final String id;
+    private final int phoneNumber;
+    private final String address;
 
-    // Constructor
-    public Persona(String name, String userID, String phoneNumber, String location) {
+    // constructor
+    public Persona(String name, String id, int phoneNumber, String address) {
         this.name = name;
-        this.userID = userID;
+        this.id = id;
         this.phoneNumber = phoneNumber;
-        this.location = location;
+        this.address = address;
     }
 
-    @Override
-    public String toString() {
-        return "Persona{" +
-                "name='" + name + '\'' +
-                ", userID=" + userID +
-                ", phoneNumber=" + phoneNumber +
-                ", location='" + location + '\'' +
-                '}';
-    }
-
-
+    // getters
+    public String getName() { return name; }
+    public String getId() { return id; }
+    public int getPhoneNumber() { return phoneNumber; }
+    public String getAddress() { return address; }
 }
