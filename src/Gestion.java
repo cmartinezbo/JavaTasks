@@ -19,7 +19,7 @@ public class Gestion {
     }
 
     // debe poder realizar la lectura desde consola con la siguiente estructura:
-    private void procesarComando() {
+    void procesarComando() {
 
         Scanner sc = new Scanner(System.in);
 
@@ -30,13 +30,11 @@ public class Gestion {
             String[] parts = string.split("&");
 
             if (parts[0].equals("3")) break;
-
+                // Salir
             if (parts[0].equals("1")) {
                 // Añadir persona
-                System.out.println("igual a 1");
             } else if (parts[0] .equals("2")) {
                 // Imprimir datos persona
-                System.out.println("igual a 2");
             }
         }
     }
