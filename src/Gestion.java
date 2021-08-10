@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Gestion {
     private ArrayList<Persona> personas;
 
-    // Inicializa las variables relacionada al array ó list tipo entidades.Persona
+    // Constructor - Inicializa las variables relacionada al array ó list tipo entidades.Persona
     public Gestion() {
         personas = new ArrayList<>();
     }
