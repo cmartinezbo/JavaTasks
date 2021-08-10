@@ -33,8 +33,19 @@ public class Gestion {
             if (input.charAt(0) == '3') break; // Salir
 
             String[] parts = input.split("&");
+            String tipoPersona = parts[1];
+            String nombre = parts[2];
+            String idPersona = parts[3];
+            String phonePersona = parts[4];
+            String direccion = parts[5];
+            String elemento = parts[6];
 
             if (parts[0].equals("1")) {
+                if (parts[1].equals("Proveedor")) {
+                // Agregar persona en Proveedor
+                } else {
+                // Agregar persona en Socio
+                }
                 agregarPersona();
             } else if (parts[0].equals("2")) {
                 // Imprimir datos persona
