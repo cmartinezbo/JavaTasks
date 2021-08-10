@@ -8,3 +8,4 @@ public class Proveedor extends Persona {
         this.product = product;
     }
 }
+

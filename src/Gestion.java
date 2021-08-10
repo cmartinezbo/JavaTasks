@@ -1,20 +1,24 @@
-// import java.util.Scanner;
+import entidades.Persona;
 
 public class Gestion {
-    public static void main(String[] args) {
+    // Inicializa las variables relacionada al array ó list tipo entidades.Persona
+    private void inicializacion() {
 
-        String string = "1&Proveedor&Carlos&123456&55555&avenida siempre viva 45&llantas1";
-        String[] parts = string.split("&");
+    }
 
-        while (parts[0] != "3") {
-            if (parts[0].equals("1")) {
-                // Añadir persona
-            } else if (parts[0] .equals("2")) {
-                // Imprimir datos persona
-            } else if (parts[0].equals("3")){
-                break;
-            }
-        }
+    // recibe como parámetro un objeto tipo persona y lo adiciona al array ó list tipo persona.
+    private void agregarPersona(Persona persona) {
+
+    }
+
+    // debe recorrer el array ó list tipo entidades.Persona y mostrar los registros con el toString()
+    private void listarPersona() {
+
+    }
+
+    // debe poder realizar la lectura desde consola con la siguiente estructura:
+    private void procesarComando() {
 
     }
 }
+

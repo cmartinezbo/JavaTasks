@@ -8,3 +8,4 @@ public class Socio extends Persona {
         this.antiquity = antiquity;
     }
 }
+
