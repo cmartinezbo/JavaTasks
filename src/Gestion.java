@@ -20,20 +20,18 @@ public class Gestion {
 
     // debe poder realizar la lectura desde consola con la siguiente estructura:
     void procesarComando() {
-
         Scanner sc = new Scanner(System.in);
 
         while (true) {
+            String input = sc.nextLine().trim();
 
-            System.out.println();
-            String string = sc.nextLine();
-            String[] parts = string.split("&");
+            if (input.charAt(0) == '3') break; // Salir
 
-            if (parts[0].equals("3")) {break;}
+            String[] parts = input.split("&");
 
-            else if (parts[0].equals("1")) {
+            if (parts[0].equals("1")) {
                 // Añadir persona
-            } else if (parts[0] .equals("2")) {
+            } else if (parts[0].equals("2")) {
                 // Imprimir datos persona
             }
         }
