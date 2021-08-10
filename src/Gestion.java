@@ -41,14 +41,17 @@ public class Gestion {
             String elemento = parts[6];
 
             if (parts[0].equals("1")) {
-                if (parts[1].equals("Proveedor")) {
+                if (tipoPersona.equals("Proveedor")) {
                 // Agregar persona en Proveedor
+                    // agregarPersona()
                 } else {
                 // Agregar persona en Socio
+                    // agregarPersona()
                 }
-                agregarPersona();
+
             } else if (parts[0].equals("2")) {
                 // Imprimir datos persona
+                // listarPersona()
             }
         }
     }
