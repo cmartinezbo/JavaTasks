@@ -1,5 +1,7 @@
 import entidades.Persona;
 
+import java.util.Scanner;
+
 public class Gestion {
     // Inicializa las variables relacionada al array ó list tipo entidades.Persona
     private void inicializacion() {
@@ -19,6 +21,24 @@ public class Gestion {
     // debe poder realizar la lectura desde consola con la siguiente estructura:
     private void procesarComando() {
 
+        Scanner sc = new Scanner(System.in);
+
+        while (true) {
+
+            System.out.println();
+            String string = sc.nextLine();
+            String[] parts = string.split("&");
+
+            if (parts[0].equals("3")) break;
+
+            if (parts[0].equals("1")) {
+                // Añadir persona
+                System.out.println("igual a 1");
+            } else if (parts[0] .equals("2")) {
+                // Imprimir datos persona
+                System.out.println("igual a 2");
+            }
+        }
     }
 }
 
