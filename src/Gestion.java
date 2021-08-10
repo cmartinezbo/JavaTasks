@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Gestion {
-    private ArrayList<Persona> personas;
+    private final ArrayList<Persona> personas;
 
     // Constructor - Inicializa las variables relacionada al array ó list tipo entidades.Persona
     public Gestion() {
@@ -43,13 +43,14 @@ public class Gestion {
             String elemento = parts[6];
 
             if (parts[0].equals("1")) {
+                Persona persona;
                 if (tipoPersona.equals("Proveedor")) {
-                    Persona persona = new Proveedor(nombre, idPersona, phonePersona, direccion, elemento);
-                    agregarPersona(persona);
+                    persona = new Proveedor(nombre, idPersona, phonePersona, direccion, elemento);
                 } else {
-                    Persona persona = new Socio(nombre, idPersona, phonePersona, direccion, elemento);
-                    agregarPersona(persona);
+                    persona = new Socio(nombre, idPersona, phonePersona, direccion, elemento);
                 }
+                agregarPersona(persona);
+
 
             } else if (parts[0].equals("2")) {
                 listarPersona();

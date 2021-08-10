@@ -8,9 +8,9 @@ public class Main {
 }
 
 /*
-todo: Inicializacion(): Inicializa las variables relacionada al array ó list tipo Persona.
+done: Inicializacion(): Inicializa las variables relacionada al array ó list tipo Persona.
 
-todo: AgregarPersona(Persona persona): recibe como parámetro un objeto tipo persona y lo adiciona al array ó list tipo persona.
+done: AgregarPersona(Persona persona): recibe como parámetro un objeto tipo persona y lo adiciona al array ó list tipo persona.
 
 todo: ListarPersona(): debe recorrer el array ó list tipo Persona y mostrar los registros con el toString().
 
