@@ -46,12 +46,10 @@ public class Gestion {
                 String address = parts[5];
                 String different = parts[6];
 
-                if (parts[0].equals("1")) {
-                    if (personType.equalsIgnoreCase("proveedor")) {
-                        agregarPersona(new Proveedor(name, id, tel, address, different));
-                    } else if (personType.equalsIgnoreCase("socio")) {
-                        agregarPersona(new Socio(name, id, tel, address, different));
-                    }
+                if (personType.equalsIgnoreCase("proveedor")) {
+                    agregarPersona(new Proveedor(name, id, tel, address, different));
+                } else if (personType.equalsIgnoreCase("socio")) {
+                    agregarPersona(new Socio(name, id, tel, address, different));
                 }
             }
         }
