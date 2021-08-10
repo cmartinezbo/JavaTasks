@@ -1,11 +1,17 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        var miGestion = new Gestion();
 
-        String string = "1&Proveedor&Carlos&123456&55555&avenida siempre viva 45&llantas1";
-        String[] parts = string.split("&");
+        var miGestion = new Gestion();
+        Scanner sc = new Scanner(System.in);
 
         while (true) {
+
+            System.out.println();
+            String string = sc.nextLine();
+            String[] parts = string.split("&");
+
             if (parts[0].equals("3")) break;
 
             if (parts[0].equals("1")) {
