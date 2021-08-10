@@ -1,3 +1,5 @@
+package entidades;
+
 public class Socio extends Persona {
     private final int antiquity;
 

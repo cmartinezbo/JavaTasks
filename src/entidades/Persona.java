@@ -1,3 +1,5 @@
+package entidades;
+
 public class Persona {
     // Attributes
     private final String name;

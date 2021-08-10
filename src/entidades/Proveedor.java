@@ -1,3 +1,5 @@
+package entidades;
+
 public class Proveedor extends Persona {
     private final String product;
 
