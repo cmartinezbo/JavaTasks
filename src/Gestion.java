@@ -1,4 +1,6 @@
 import entidades.Persona;
+import entidades.Proveedor;
+import entidades.Socio;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -42,16 +44,15 @@ public class Gestion {
 
             if (parts[0].equals("1")) {
                 if (tipoPersona.equals("Proveedor")) {
-                // Agregar persona en Proveedor
-                    // agregarPersona()
+                    Persona persona = new Proveedor(nombre, idPersona, phonePersona, direccion, elemento);
+                    agregarPersona(persona);
                 } else {
-                // Agregar persona en Socio
-                    // agregarPersona()
+                    Persona persona = new Socio(nombre, idPersona, phonePersona, direccion, elemento);
+                    agregarPersona(persona);
                 }
 
             } else if (parts[0].equals("2")) {
-                // Imprimir datos persona
-                // listarPersona()
+                listarPersona();
             }
         }
     }
