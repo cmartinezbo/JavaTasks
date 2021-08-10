@@ -29,9 +29,9 @@ public class Gestion {
             String string = sc.nextLine();
             String[] parts = string.split("&");
 
-            if (parts[0].equals("3")) break;
-                // Salir
-            if (parts[0].equals("1")) {
+            if (parts[0].equals("3")) {break;}
+
+            else if (parts[0].equals("1")) {
                 // Añadir persona
             } else if (parts[0] .equals("2")) {
                 // Imprimir datos persona
