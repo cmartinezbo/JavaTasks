@@ -7,7 +7,7 @@ public class Gestion {
     private ArrayList<Persona> personas;
 
     // Inicializa las variables relacionada al array ó list tipo entidades.Persona
-    public void Gestion() {
+    public Gestion() {
         personas = new ArrayList<>();
     }
 
