@@ -35,7 +35,7 @@ public class Gestion {
             String[] parts = input.split("&");
 
             if (parts[0].equals("1")) {
-                // Añadir persona
+                agregarPersona();
             } else if (parts[0].equals("2")) {
                 // Imprimir datos persona
             }

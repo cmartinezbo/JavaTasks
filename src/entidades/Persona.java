@@ -14,5 +14,14 @@ public class Persona {
         this.phoneNumber = phoneNumber;
         this.location = location;
     }
-}
 
+    @Override
+    public String toString() {
+        return "Persona{" +
+                "name='" + name + '\'' +
+                ", userID=" + userID +
+                ", phoneNumber=" + phoneNumber +
+                ", location='" + location + '\'' +
+                '}';
+    }
+}
