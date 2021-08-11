@@ -1,4 +1,4 @@
-package ejercicio1.entidades;
+package task2.entidades;
 
 public class Proveedor extends Persona {
     // attributes

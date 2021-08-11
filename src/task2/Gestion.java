@@ -1,8 +1,8 @@
-package ejercicio1;
+package task2;
 
-import ejercicio1.entidades.Persona;
-import ejercicio1.entidades.Proveedor;
-import ejercicio1.entidades.Socio;
+import task2.entidades.Persona;
+import task2.entidades.Proveedor;
+import task2.entidades.Socio;
 
 import java.util.ArrayList;
 import java.util.Scanner;
