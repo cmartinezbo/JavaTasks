@@ -1,9 +1,9 @@
 import entidades.Persona;
-        import entidades.Proveedor;
-        import entidades.Socio;
+import entidades.Proveedor;
+import entidades.Socio;
 
-        import java.util.ArrayList;
-        import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Gestion {
     // attributes
@@ -37,9 +37,7 @@ public class Gestion {
             if (input.charAt(0) == '2') {
                 System.out.println("***Inventario de Personas***\n");
                 listarPersonas();
-            }
-
-            else if (input.charAt(0) == '1') {
+            } else if (input.charAt(0) == '1') {
                 String[] parts = input.split("&");
 
                 String personType = parts[1];
@@ -57,6 +55,7 @@ public class Gestion {
             }
         }
     }
+
     public static void main(String[] args) {
         var miGestion = new Gestion();
         miGestion.procesarComando();

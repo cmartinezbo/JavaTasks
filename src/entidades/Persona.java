@@ -16,8 +16,19 @@ public class Persona {
     }
 
     // getters
-    public String getName() { return name; }
-    public String getId() { return id; }
-    public int getPhoneNumber() { return phoneNumber; }
-    public String getAddress() { return address; }
+    public String getName() {
+        return name;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public int getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public String getAddress() {
+        return address;
+    }
 }
