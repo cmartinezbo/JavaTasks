@@ -1,4 +1,4 @@
-package entidades;
+package ejercicio1.entidades;
 
 public class Persona {
     // attributes

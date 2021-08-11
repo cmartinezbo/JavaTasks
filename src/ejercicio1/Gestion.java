@@ -1,6 +1,8 @@
-import entidades.Persona;
-import entidades.Proveedor;
-import entidades.Socio;
+package ejercicio1;
+
+import ejercicio1.entidades.Persona;
+import ejercicio1.entidades.Proveedor;
+import ejercicio1.entidades.Socio;
 
 import java.util.ArrayList;
 import java.util.Scanner;
