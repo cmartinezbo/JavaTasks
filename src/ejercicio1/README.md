@@ -49,11 +49,11 @@ Opción 3: Salir
 
 - Nota 2: En este ejercicio se requiere subir cuatro archivos. 
 
-      Uno correspondiente a la clase Persona llamado Persona.java.
-      otro correspondiente al Persona Proveedor llamado Proveedor.java.
-      otro correspondiente al Persona Socio llamado Socio.java.
-      otro correspondiente al Gestion llamado Gestion.java (aquí va el main).
-      Recuerde eliminar la línea de package al hacer el envío y utilizar el botón de [+] para agregar más de un archivo de código fuente.
+     - Uno correspondiente a la clase Persona llamado Persona.java.
+     - otro correspondiente al Persona Proveedor llamado Proveedor.java.
+     - otro correspondiente al Persona Socio llamado Socio.java.
+     - otro correspondiente al Gestion llamado Gestion.java (aquí va el main).
+     - Recuerde eliminar la línea de package al hacer el envío y utilizar el botón de [+] para agregar más de un archivo de código fuente.
       
 <table class="default">
 <tr>
