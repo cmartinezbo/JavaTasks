@@ -12,13 +12,10 @@ public class Proveedor extends Persona {
 
     @Override
     public String toString() {
-        return "Proveedor { " +
-                "name='" + getName() + '\'' +
-                ", id=" + getId() +
-                ", phoneNumber=" + getPhoneNumber() +
-                ", address='" + getAddress() + '\'' +
-                ", product='" + product + '\'' +
-                " } ";
+        return  "   Persona Proveedor - Nombre: " + getName() + "\n" +
+                "   Identificación: " + getId() + "\n" +
+                "   Teléfono: " + getPhoneNumber() + "\n" +
+                "   Dirección: " + getAddress() + "\n" +
+                "   Producto: " + product;
     }
 }
-

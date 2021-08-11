@@ -34,7 +34,10 @@ public class Gestion {
 
             if (input.charAt(0) == '3') break;
 
-            if (input.charAt(0) == '2') listarPersonas();
+            if (input.charAt(0) == '2') {
+                System.out.println("***Inventario de Personas***\n");
+                listarPersonas();
+            }
 
             else if (input.charAt(0) == '1') {
                 String[] parts = input.split("&");
@@ -53,5 +56,9 @@ public class Gestion {
                 }
             }
         }
+    }
+    public static void main(String[] args) {
+        var miGestion = new Gestion();
+        miGestion.procesarComando();
     }
 }

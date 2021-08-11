@@ -12,13 +12,11 @@ public class Socio extends Persona {
 
     @Override
     public String toString() {
-        return "Socio { " +
-                "name='" + getName() + '\'' +
-                ", id=" + getId() +
-                ", phoneNumber=" + getPhoneNumber() +
-                ", address='" + getAddress() + '\'' +
-                ", antiquity='" + antiquity + '\'' +
-                " } ";
+        return  "   Persona Socio - Nombre: " + getName() + "\n" +
+                "   Identificación: " + getId() + "\n" +
+                "   Teléfono: " + getPhoneNumber() + "\n" +
+                "   Dirección: " + getAddress() + "\n" +
+                "   Antigüedad: " + antiquity + " años";
     }
 }
 
