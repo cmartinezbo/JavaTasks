@@ -31,7 +31,7 @@ La tienda de la esquina necesita ciertas funcionalidades para automatizar su pro
 
         Output: (0,11)
 
-    ``3) met_encontrar_faltantes(l_pedido, l_mis_productos):`` Método que debe permitir recibir la lista de los productos solicitados en el pedido y la lista de mis productos, se requiere encontrar la lista de los productos que no tenemos a disposición para vender.
+   ``3) met_encontrar_faltantes(l_pedido, l_mis_productos):`` Método que debe permitir recibir la lista de los productos solicitados en el pedido y la lista de mis productos, se requiere encontrar la lista de los productos que no tenemos a disposición para vender.
 
   - Ejemplo: 
 
@@ -45,7 +45,7 @@ La tienda de la esquina necesita ciertas funcionalidades para automatizar su pro
 
  
 
-     ``4) met_obtener_intercambiables(l_sobrantes_otros, l_sobrantes_mios):`` Método que debe permitir recibir la lista de los productos sobrantes del otro y la lista de mis productos sobrantes. Se deben recorrer las dos listas y encontrar la cantidad de productos de c/u que se puedan intercambiar y retornar la cantidad máxima que pueden intercambiar:
+   ``4) met_obtener_intercambiables(l_sobrantes_otros, l_sobrantes_mios):`` Método que debe permitir recibir la lista de los productos sobrantes del otro y la lista de mis productos sobrantes. Se deben recorrer las dos listas y encontrar la cantidad de productos de c/u que se puedan intercambiar y retornar la cantidad máxima que pueden intercambiar:
 
   - Ejemplo:
 
