@@ -24,10 +24,29 @@ public class Tienda {
         }
         return output;
     }
+
+    public static ArrayList<String> met_encontrar_faltantes(String pedido, String producto) {
+
+        ArrayList<String> firstList = new ArrayList<>(Arrays.asList(pedido.trim().split(",")));
+        ArrayList<String> secondList = new ArrayList<>(Arrays.asList(producto.trim().split(", ")));
+        ArrayList<String> output = new ArrayList<>();
+
+        for (String item : firstList) {
+            if (!secondList.contains(item)) {
+                output.add(item);
+            }
+        }
+        return output;
+    }
+
     public static void main(String[] args) {
         System.out.println(met_filtrar_productos("arroz, sal, miel, lentejas, frijol, leche, lentejas, arroz, " +
                 "miel, sal, banano"));
-        System.out.println(met_productos_faltantes("0,3,4,2,1,5,6,8,11", "arroz, sal, miel, lentejas, " +
-                "frijol, leche, lentejas, arroz, miel, sal, banano, arroz", "arroz" ));
+
+        System.out.println(met_productos_faltantes("0,3,4,2,1,5,6,8,11", "arroz, sal, miel, " +
+                "lentejas, frijol, leche, lentejas, arroz, miel, sal, banano, arroz", "arroz" ));
+
+        System.out.println(met_encontrar_faltantes("arroz, sal, miel, lentejas, banano, frijol",
+                "sal, miel, ajo, frijol, leche"));
     }
 }
