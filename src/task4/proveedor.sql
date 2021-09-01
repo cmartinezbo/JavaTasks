@@ -1,8 +1,7 @@
-DROP TABLE IF EXISTS proveedor;
 CREATE TABLE proveedor( 
     prov_codigo int AUTO_INCREMENT, 
     prov_nombre varchar(20) NOT NULL, 
-    prov_direccion varchar(15) NOT NULL, 
+    prov_direccion varchar(30) NOT NULL, 
     prov_telefono int NULL,
     prov_pais varchar(20) NOT NULL,
     prov_ciudad varchar(20) NOT NULL,	
