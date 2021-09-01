@@ -1,10 +1,22 @@
-DROP TABLE IF EXISTS ofrece;
 CREATE TABLE ofrece( 
-    prov_codigo_fk int NOT NULL;
-    prod_codigo_fk int NOT NULL;
-    PRIMARY KEY(prov_codigo_fk),
-    FOREIGN KEY(prov_codigo_fk) REFERENCES proveedor(prov_codigo),
+	prov_codigo_fk int NOT NULL,
+	prod_codigo_fk int NOT NULL,
+	PRIMARY KEY(prov_codigo_fk),
     FOREIGN KEY(prod_codigo_fk) REFERENCES producto(prod_codigo)
-)
-INSERT INTO productos(prod_nombre, prod_valor, prod_cantidad, prod_material) 
-VALUES ('super cuerdas', 11000, 12, 'nylon');
+);
+INSERT INTO ofrece(prov_codigo_fk, prod_codigo_fk)
+VALUES (123, 2001);
+INSERT INTO ofrece(prov_codigo_fk, prod_codigo_fk)
+VALUES (124, 2002);
+INSERT INTO ofrece(prov_codigo_fk, prod_codigo_fk)
+VALUES (125, 2003);
+INSERT INTO ofrece(prov_codigo_fk, prod_codigo_fk)
+VALUES (126, 2004);
+INSERT INTO ofrece(prov_codigo_fk, prod_codigo_fk)
+VALUES (127, 2005);
+INSERT INTO ofrece(prov_codigo_fk, prod_codigo_fk)
+VALUES (128, 2006);
+INSERT INTO ofrece(prov_codigo_fk, prod_codigo_fk)
+VALUES (129, 2007);
+INSERT INTO ofrece(prov_codigo_fk, prod_codigo_fk)
+VALUES (130, 2008);
