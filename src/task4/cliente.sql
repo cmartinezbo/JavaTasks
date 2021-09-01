@@ -1,11 +1,10 @@
-DROP TABLE IF EXISTS cliente;
 CREATE TABLE cliente( 
 	cli_id int AUTO_INCREMENT, 
 	cli_nombre varchar(20) NOT NULL, 
 	cli_apellido varchar(30) NOT NULL, 
-	cli_direccion varchar(15) NOT NULL, 
+	cli_direccion varchar(30) NOT NULL, 
 	cli_telefono int NULL,
-	cli_fecha_nacimiento timestamp NOT NULL,
+	cli_fecha_nacimiento date NOT NULL,
 	PRIMARY KEY(cli_id)
 );
 INSERT INTO cliente(cli_nombre, cli_apellido, cli_direccion, cli_telefono, cli_fecha_nacimiento) 
