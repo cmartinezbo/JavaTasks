@@ -473,9 +473,10 @@ Debe realizar las siguientes consultas:
   3. Consultar todos los registros y columnas de la tabla producto cuyo valor sea mayor a 10000.
   
   4. Consultar todos los registros y columnas de la tabla factura cuyo vendedor es “Jesús Daniel”.
-  Consultar todos los registros y columnas de los compra-cliente (Producto cartesiano o join) que han realizado compras ordenado por cli_id de forma ascendente.
+ 
+  5. Consultar todos los registros y columnas de los compra-cliente (Producto cartesiano o join) que han realizado compras ordenado por cli_id de forma ascendente.
   
-  5. Consultar los registros mostrando la concatenación (usar  ||) del nombre y el apellido separado por espacio y en otra columna la cantidad de compras realizadas, se debe ordenar por la cantidad de compras(count(*)) y cli_nombre de forma  descendente.
+  6. Consultar los registros mostrando la concatenación (usar  ||) del nombre y el apellido separado por espacio y en otra columna la cantidad de compras realizadas, se debe ordenar por la cantidad de compras(count(*)) y cli_nombre de forma  descendente.
   
   
     NOTA: Generar un archivo script sql para las consultas. 
